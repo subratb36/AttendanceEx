@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/blank">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerCrop"
+        />
+
+    <RelativeLayout
+        android:id="@+id/relative_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32.0dip"
+            android:layout_marginRight="32.0dip"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="LOGIN"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="16.0sp"
+                android:layout_marginBottom="10.0dip"
+                android:layout_marginTop="1.0dip" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12.0dip"
+                android:drawablePadding="10dp"
+                android:id="@+id/input_layout_userName"
+                android:textColorHint="@color/white">
+
+                <EditText
+                    android:id="@+id/userId_et"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="UserId"
+                    android:drawablePadding="10dp"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/white"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12.0dip"
+                android:drawablePadding="10dp"
+                android:id="@+id/input_layout_password"
+                android:textColorHint="@color/white">
+
+                <com.scottyab.showhidepasswordedittext.ShowHidePasswordEditText
+                    android:id="@+id/android_hide_show_edittext_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="password"
+                    android:drawablePadding="10dp"
+                    android:textColor="@color/white"
+                    app:drawable_show="@drawable/show24"
+                    app:drawable_hide="@drawable/hide24"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remember me"
+                android:textColor="#fff"
+                android:id="@+id/checkBox_remember"
+                android:checked="false" />
+            <Button
+                android:id="@+id/empLogin_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20.0dip"
+                android:layout_marginLeft="64.0dip"
+                android:layout_marginRight="64.0dip"
+                android:layout_marginTop="30.0dip"
+                android:padding="12.0dip"
+                android:text="Login"
+                android:background="#255079"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

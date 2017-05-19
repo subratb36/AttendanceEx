@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AttendanceEX</string>
+    <string name="err_msg_name">Enter your User name</string>
+    <string name="err_msg_password">Enter the password</string>
+    <string name="miattendance_submit_name">Submit</string>
+    <string-array name="type_array">
+        <item>--select--</item>
+        <item>IN</item>
+        <item>OUT</item>
+    </string-array>
+</resources>
